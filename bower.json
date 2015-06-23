@@ -1,0 +1,19 @@
+{
+  "name": "tmpcafe",
+  "version": "0.0.0",
+  "authors": [
+    "Gary Duncan <g@shedcollective.org>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "fontawesome": "~4.3.0"
+  }
+}
