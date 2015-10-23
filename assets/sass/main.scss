@@ -1,0 +1,41 @@
+// Reset
+@import 'required/normalize.scss';
+
+// Project base colours and variables
+@import 'base/palette';
+@import 'base/mixins';
+@import 'base/variables';
+@import 'base/animate';
+
+// Project components
+@import 'component/button';
+@import 'component/links';
+@import 'component/image';
+@import 'component/lists';
+
+// Project layout
+@import 'layout/container';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/section';
+@import 'layout/navigation';
+
+// Project base
+@import 'base/typography';
+
+html,
+body {
+    height: 100%;
+}
+
+*
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    background: $black;
+}

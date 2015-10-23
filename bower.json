@@ -1,8 +1,8 @@
 {
-  "name": "tmpcafe",
+  "name": "darkly",
   "version": "0.0.0",
   "authors": [
-    "Gary Duncan <g@shedcollective.org>"
+    "Tom Butler <t@shedcollective.org>"
   ],
   "license": "MIT",
   "ignore": [
@@ -13,7 +13,5 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "~3.3.5",
-    "fontawesome": "~4.3.0"
   }
 }

@@ -1,0 +1,81 @@
+.social {
+    display: table;
+    height: 100%;
+    width: 100%;
+    a {
+        display: table-cell;
+        height: 100%;
+        margin-right: -5px;
+        text-align: center;
+        line-height: 70px;
+        vertical-align: middle;
+        transition: background .3s, color .3s;
+        &:hover {
+            background: $blue;
+            color: $white;
+        }
+    }
+}
+
+.social-link {
+    padding: 0 10px;
+    img {
+        width: 25px;
+    }
+    &.itunes img {
+        width: 22px;
+    }
+    &.itunes img,
+    &.spotify img,
+    &.facebook img,
+    &.instagram img {
+        position: relative;
+        top: 7px;
+    }
+    &.twitter img {
+        position: relative;
+        top: 6px;
+    }
+    &.soundcloud img {
+        width: 30px;
+        position: relative;
+        top: 3px;
+    }
+}
+
+.links {
+    display: block;
+    width: 100%;
+    a {
+        display: block;
+        float: left;
+        height: 100%;
+        width: 50%;
+        text-align: center;
+        line-height: 70px;
+        vertical-align: middle;
+        transition: background .3s, color .3s;
+        &:hover {
+            background: $blue;
+            color: $white;
+        }
+    }
+}
+
+.links-anchor {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $white;
+    letter-spacing: 5px;
+    @media (max-width: $screen-md-max) {
+        float: left;
+        width: 50%;
+    }
+    &.links-anchor-alt {
+        margin-right: 0;
+        background: $white;
+        color: $black;
+    }
+}
+
+

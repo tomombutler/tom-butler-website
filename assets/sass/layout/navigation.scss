@@ -1,0 +1,7 @@
+.links,
+.social {
+    height: 100%;
+    @media (max-width: $screen-md-max) {
+        width: 100%;
+    }
+}
