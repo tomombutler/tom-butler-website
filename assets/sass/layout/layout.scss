@@ -1,0 +1,24 @@
+body {
+    padding: 2rem;
+}
+
+.layout {
+    width: 100vw;
+}
+
+.layout_pop-up {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 18.5rem;
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75);
+    span {
+        position: absolute;
+        top: 0.6rem;
+        left: -0.6666rem;
+        color: $green;
+    }
+    &.is-active {
+        display: block;
+    }
+}

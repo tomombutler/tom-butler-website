@@ -1,3 +1,37 @@
-h1 {
-    margin: 25px 0;
+/**
+ * @license
+ * Open Font License (OFL)
+ *
+ * Copyright (c) 2015, Alfredo Marco Pradil (<http://behance.net/pradil | ammpradil@gmail.com>), with Reserved Font Name HK Grotesk.
+ *
+ * You may obtain a valid license at the URL below.
+ *
+ * Webfont: Hanken Grotesk by Hanken
+ * URL: http://cargocollective.com/hanken
+*/
+
+@font-face {
+    font-family: 'HKGrotesk-Regular';
+    src: url('../../webfonts/HKGrotesk-Regular.otf') format('opentype');
+}
+
+html,
+body {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    font-style: normal;
+    color: $white;
+    -webkit-font-smoothing: antialiased;
+    @media (min-width: $screen-xl) {
+        font-size: 40px;
+    }
+}
+
+p {
+    line-height: 1.4;
+    margin: 0 0 2rem;
+}
+
+.highlight-green {
+    color: $green;
 }

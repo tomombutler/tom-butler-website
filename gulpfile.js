@@ -46,6 +46,8 @@ gulp.task('js', function() {
 
     gulp.src([
             'assets/bower_components/jquery/dist/jquery.min.js',
+            'assets/bower_components/typed.js/dist/typed.min.js',
+            'assets/bower_components/simple-text-rotator/jquery.simple-text-rotator.min.js',
             'assets/js/app.js',
         ])
         .pipe(sourcemaps.init())

@@ -1,11 +1,12 @@
+// vendor
+@import "../bower_components/simple-text-rotator/simpletextrotator.css";
+
 // Reset
 @import 'required/normalize.scss';
 
 // Project base colours and variables
 @import 'base/palette';
-@import 'base/mixins';
 @import 'base/variables';
-@import 'base/animate';
 
 // Project components
 @import 'component/button';
@@ -19,6 +20,7 @@
 @import 'layout/footer';
 @import 'layout/section';
 @import 'layout/navigation';
+@import 'layout/layout';
 
 // Project base
 @import 'base/typography';
@@ -26,16 +28,11 @@
 html,
 body {
     height: 100%;
+    background: $black;
 }
 
 *
 *::before,
 *::after {
     box-sizing: border-box;
-}
-
-body {
-    font-family: $font-family-base;
-    font-size: $font-size-base;
-    background: $black;
 }
