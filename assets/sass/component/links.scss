@@ -3,4 +3,11 @@ a {
     color: inherit;
 }
 
+.link {
+    transition: color .5s ease;
+    &:hover {
+        color: $green;
+    }
+}
+
 

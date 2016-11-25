@@ -9,17 +9,11 @@
 @import 'base/variables';
 
 // Project components
-@import 'component/button';
 @import 'component/links';
 @import 'component/image';
-@import 'component/lists';
 
 // Project layout
-@import 'layout/container';
 @import 'layout/header';
-@import 'layout/footer';
-@import 'layout/section';
-@import 'layout/navigation';
 @import 'layout/layout';
 
 // Project base
@@ -27,8 +21,8 @@
 
 html,
 body {
-    height: 100%;
-    background: $black;
+    height: 100vh;
+    background: $white;
 }
 
 *

@@ -12,7 +12,7 @@
 
 @font-face {
     font-family: 'HKGrotesk-Regular';
-    src: url('../../webfonts/HKGrotesk-Regular.otf') format('opentype');
+    src: url('../webfonts/HKGrotesk-Regular.otf') format('opentype');
 }
 
 html,
@@ -22,8 +22,14 @@ body {
     font-style: normal;
     color: $white;
     -webkit-font-smoothing: antialiased;
+    @media (min-width: $screen-lg) {
+        font-size: 32px;
+    }
     @media (min-width: $screen-xl) {
         font-size: 40px;
+    }
+    @media (max-width: $screen-xs) {
+        font-size: 20px;
     }
 }
 

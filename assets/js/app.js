@@ -15,9 +15,15 @@ _APP = function()
      */
     base.__construct = function()
     {
-
-        $(".hi").on("hover", function() {
-            $(".layout_pop-up").toggleClass("is-active")
+        $(".hi").on({
+            mouseenter: function () {
+                $(".layout_pop-up").addClass("is-active");
+                $(".layout_pop-up > span").addClass("is-active");
+            },
+            mouseleave: function () {
+                $(".layout_pop-up").removeClass("is-active");
+                $(".layout_pop-up > span").removeClass("is-active");
+            }
         });
 
         $(".rotate").textrotator({
