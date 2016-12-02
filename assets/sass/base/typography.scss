@@ -20,17 +20,28 @@ body {
     font-family: $font-family-base;
     font-size: $font-size-base;
     font-style: normal;
-    color: $white;
+    color: $black;
     -webkit-font-smoothing: antialiased;
-    @media (min-width: $screen-lg) {
-        font-size: 32px;
+}
+
+.page-heading {
+    position: relative;
+    font-size: 3rem;
+    z-index: 0;
+
+    &--peace {
+        &::after {
+            position: absolute;
+            content: url('../../../assets/img/peace.svg');
+            transform: translate(-0.5rem, -0.5rem);
+            z-index: -1;
+        }
     }
-    @media (min-width: $screen-xl) {
-        font-size: 40px;
-    }
-    @media (max-width: $screen-xs) {
-        font-size: 20px;
-    }
+}
+
+.text-intro {
+    font-size: 2rem;
+    line-height: 3rem;
 }
 
 p {

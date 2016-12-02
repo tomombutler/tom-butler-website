@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
         <meta name="description" content="The website for visual designer and frontend developer, Tom Butler">
-        <link href="/assets/css/main.min.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/build/css/main.min.css" rel="stylesheet" type="text/css" />
         <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-touch-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-touch-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-touch-icon-72x72.png">
@@ -27,17 +27,67 @@
     </head>
     <body>
         <div class="layout">
-        <aside class="layout__item layout__item--sidebar">
-            <div class="site-menu"></div>
-        </aside>
-        <main class="layout__item layout__item--main">
-            <section class="main__item">
-                <p class="page-heading page-heading--peace">Hello</p>
-                <p>My name is Tom Butler.</p>
-                <p>I am a designer &amp; coder working in London.</p>
-            </section>
-        </main>
-        <aside class="layout__item layout__item--sidebar"></aside>
+            <aside class="sidebar sidebar--left">
+                <div class="site-menu">
+                    <nav class="site-navigation">
+                        <ul class="site-navigation__list">
+                            <li class="site-navigation__item">
+                                <a class="site-navigation__link" href="/">Home</a>
+                            </li>
+                            <li class="site-navigation__item">
+                                <a class="site-navigation__link" href="/about">About</a>
+                            </li>
+                            <li class="site-navigation__item">
+                                <a class="site-navigation__link" href="/contact">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </aside>
+            <main class="main">
+                <section class="intro">
+                    <p class="page-heading page-heading--peace">Hello</p>
+                    <p class="text-intro">My name is Tom Butler. <br>I am a designer &amp; coder working in London.</p>
+                </section>
+                <section class="project-cards">
+                    <div class="project-card">
+                        <a href="/" class="project-card__image three-two">
+                            <span class="project-card__overlay content">
+                                <span class="project-card__title">Project Title</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <a href="/" class="project-card__image three-two">
+                            <span class="project-card__overlay content">
+                                <span class="project-card__title">Project Title</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <a href="/" class="project-card__image three-two">
+                            <span class="project-card__overlay content">
+                                <span class="project-card__title">Project Title</span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <a href="/" class="project-card__image three-two">
+                            <span class="project-card__overlay content">
+                                <span class="project-card__title">Project Title</span>
+                            </span>
+                        </a>
+                    </div>
+                </section>
+                <a href="/projects" class="btn btn--large btn--outline">
+                    <span>View all projects</span>
+                </a>
+            </main>
+            <aside class="sidebar sidebar--right">
+                <a href="/" class="site-link">
+                    <img src="/assets/img/tb-logo.svg" alt="Tom Butler - logo image">
+                </a>
+            </aside>
         </div>
 
         <!-- Include JS -->

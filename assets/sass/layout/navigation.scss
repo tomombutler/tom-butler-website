@@ -1,0 +1,19 @@
+.site-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-90deg);
+    height: 100vh;
+    color: white;
+}
+
+.site-navigation__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-navigation__item {
+    list-style-type: none;
+    padding: 1rem;
+}

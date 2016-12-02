@@ -7,14 +7,18 @@
 // Project base colours and variables
 @import 'base/palette';
 @import 'base/variables';
+@import 'base/mixins';
 
 // Project components
 @import 'component/links';
 @import 'component/image';
+@import 'component/projects';
+@import 'component/button';
 
 // Project layout
 @import 'layout/header';
 @import 'layout/layout';
+@import 'layout/navigation';
 
 // Project base
 @import 'base/typography';

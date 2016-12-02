@@ -1,0 +1,15 @@
+.btn {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.btn--large {
+    height: 6rem;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.btn--outline {
+    border: 0.333rem solid $grey1;
+}

@@ -1,51 +1,34 @@
-body {
-    padding: 2rem;
-}
-
 .layout {
     position: relative;
-    width: 30rem;
-    max-width: 100%;
+    display: block;
+    flex-flow: row wrap;
+    max-height: 100vh;
+    width: 100%;
+    max-width: 96rem;
+    margin: 0 auto;
+    background: $white;
 }
 
-.hi {
-    display: inline-block;
-    cursor: url(../img/pointer.png), default;
-    cursor: -webkit-image-set(
-        url(../img/pointer.png) 1x,
-        url(../img/pointer@2x.png) 2x
-    ), auto;
+.sidebar {
+    position: fixed;
+    height: 100vh;
+    width: 4rem;
+    background: $black;
 }
 
-.layout_pop-up {
-    position: absolute;
-    top: -2rem;
-    right: 3.5rem;
-    box-shadow: 0px 0px 50px 0px rgba(0,0,0,1);
-    opacity: 0;
-    transform: translateY(-5rem);
-    transition: opacity .5s ease, transform .5s ease;
-
-    &.is-active {
-        opacity: 1;
-        transform: translateY(0);
+    .sidebar--left {
+        top: 0;
+        left: 0;
+        background: $black;
     }
 
-    span {
-        position: absolute;
-        top: 1rem;
-        left: -0.6666rem;
-        color: $green;
-        text-shadow: 0px .08rem .2rem #4A4A4A;
-        opacity: 0;
-        transform: translateY(.25rem);
-        transition: opacity 1s ease, transform 1s ease;
-        transition-delay: .5s;
-
-        &.is-active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
+    .sidebar--right {
+        top: 0;
+        right: 0;
+        background: $grey1;
     }
+
+.main {
+    padding: 5rem 3rem 3rem;
+    margin: 0 4rem;
 }
