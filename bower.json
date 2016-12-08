@@ -13,6 +13,6 @@
     "tests"
   ],
   "dependencies": {
-    "simple-text-rotator": "~1.0.0"
+    "sticky-kit": "^1.1.2"
   }
 }

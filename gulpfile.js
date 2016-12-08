@@ -73,7 +73,7 @@ gulp.task('js:app', function() {
     gulp
         .src([
             'assets/bower_components/jquery/dist/jquery.min.js',
-            'assets/bower_components/typed.js/dist/typed.min.js',
+            'assets/bower_components/sticky-kit/jquery.sticky-kit.min.js',
             'assets/js/app.js'
         ])
         .pipe(sourcemaps.init())
