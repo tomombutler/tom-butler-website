@@ -1,19 +1,60 @@
 /**
  * @license
- * Open Font License (OFL)
+ * MyFonts Webfont Build ID 3342538, 2017-02-09T05:15:44-0500
  *
- * Copyright (c) 2015, Alfredo Marco Pradil (<http://behance.net/pradil | ammpradil@gmail.com>), with Reserved Font Name HK Grotesk.
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
  *
- * You may obtain a valid license at the URL below.
+ * You may obtain a valid license at the URLs below.
  *
- * Webfont: Hanken Grotesk by Hanken
- * URL: http://cargocollective.com/hanken
+ * Webfont: BergenText-Bold by Mindburger Studio
+ * URL: http://www.myfonts.com/fonts/mindburger-studio/bergen-text/bold/
+ *
+ * Webfont: BergenText-Italic by Mindburger Studio
+ * URL: http://www.myfonts.com/fonts/mindburger-studio/bergen-text/italic/
+ *
+ * Webfont: BergenText-Regular by Mindburger Studio
+ * URL: http://www.myfonts.com/fonts/mindburger-studio/bergen-text/regular/
+ *
+ * Webfont: BergenText-SemiBold by Mindburger Studio
+ * URL: http://www.myfonts.com/fonts/mindburger-studio/bergen-text/semi-bold/
+ *
+ * Webfont: BergenText-BoldItalic by Mindburger Studio
+ * URL: http://www.myfonts.com/fonts/mindburger-studio/bergen-text/bold-italic/
+ *
+ * Webfont: BergenText-SemiBoldItalic by Mindburger Studio
+ * URL: http://www.myfonts.com/fonts/mindburger-studio/bergen-text/semi-bold-italic/
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3342538
+ * Licensed pageviews: 10,000
+ * Webfonts copyright: Copyright (c) Milos Mitrovic, 2015. All rights reserved.
+ *
+ * © 2017 MyFonts Inc
 */
 
-@font-face {
-    font-family: 'HKGrotesk-Regular';
-    src: url('../webfonts/HKGrotesk-Regular.otf') format('opentype');
-}
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3300ca");
+
+
+@font-face {font-family: 'BergenText-Bold';src: url('../../../assets/webfonts/3300CA_0_0.eot');src: url('../../../assets/webfonts/3300CA_0_0.eot?#iefix') format('embedded-opentype'),url('../../../assets/webfonts/3300CA_0_0.woff2') format('woff2'),url('../../../assets/webfonts/3300CA_0_0.woff') format('woff'),url('../../../assets/webfonts/3300CA_0_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'BergenText-Italic';src: url('../../../assets/webfonts/3300CA_1_0.eot');src: url('../../../assets/webfonts/3300CA_1_0.eot?#iefix') format('embedded-opentype'),url('../../../assets/webfonts/3300CA_1_0.woff2') format('woff2'),url('../../../assets/webfonts/3300CA_1_0.woff') format('woff'),url('../../../assets/webfonts/3300CA_1_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'BergenText-Regular';src: url('../../../assets/webfonts/3300CA_2_0.eot');src: url('../../../assets/webfonts/3300CA_2_0.eot?#iefix') format('embedded-opentype'),url('../../../assets/webfonts/3300CA_2_0.woff2') format('woff2'),url('../../../assets/webfonts/3300CA_2_0.woff') format('woff'),url('../../../assets/webfonts/3300CA_2_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'BergenText-SemiBold';src: url('../../../assets/webfonts/3300CA_3_0.eot');src: url('../../../assets/webfonts/3300CA_3_0.eot?#iefix') format('embedded-opentype'),url('../../../assets/webfonts/3300CA_3_0.woff2') format('woff2'),url('../../../assets/webfonts/3300CA_3_0.woff') format('woff'),url('../../../assets/webfonts/3300CA_3_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'BergenText-BoldItalic';src: url('../../../assets/webfonts/3300CA_4_0.eot');src: url('../../../assets/webfonts/3300CA_4_0.eot?#iefix') format('embedded-opentype'),url('../../../assets/webfonts/3300CA_4_0.woff2') format('woff2'),url('../../../assets/webfonts/3300CA_4_0.woff') format('woff'),url('../../../assets/webfonts/3300CA_4_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'BergenText-SemiBoldItalic';src: url('../../../assets/webfonts/3300CA_5_0.eot');src: url('../../../assets/webfonts/3300CA_5_0.eot?#iefix') format('embedded-opentype'),url('../../../assets/webfonts/3300CA_5_0.woff2') format('woff2'),url('../../../assets/webfonts/3300CA_5_0.woff') format('woff'),url('../../../assets/webfonts/3300CA_5_0.ttf') format('truetype');}
 
 html,
 body {
@@ -24,30 +65,22 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-.page-heading {
-    position: relative;
-    font-size: 3rem;
-    z-index: 0;
-
-    &--peace {
-        &::after {
-            position: absolute;
-            content: url('../../../assets/img/peace.svg');
-            transform: translate(-0.5rem, -0.5rem);
-            z-index: -1;
-        }
-    }
-}
-
-.text-intro {
-    font-size: 2rem;
-    line-height: 3rem;
+b {
+    font-weight: normal;
 }
 
 p {
     line-height: 1.4;
     margin: 0 0 2rem;
 }
+
+    .p--intro {
+        font-size: $font-size-large;
+        line-height: 2.8rem;
+        b {
+            font-family: $font-family-bold-italic;
+        }
+    }
 
 .highlight-green {
     color: $green;

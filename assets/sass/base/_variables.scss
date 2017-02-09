@@ -1,9 +1,16 @@
-$font-family-base:          'HKGrotesk-Regular', sans-serif;
-$font-size-base:            18px;
+$font-family-base:                      'BergenText-Regular', sans-serif;
+$font-family-italic:                    'BergenText-RegularItalic', sans-serif;
+$font-family-bold:                      'BergenText-Bold', sans-serif;
+$font-family-bold-italic:               'BergenText-BoldItalic', sans-serif;
+$font-family-semi-bold:                 'BergenText-SemiBold', sans-serif;
+$font-family-semi-bold-italic:          'BergenText-SemiBoldItalic', sans-serif;
+
+$font-size-base:                        20px;
+$font-size-large:                       2.1rem;
 
 // breakpoints
-$screen-xl:                 1500px;
-$screen-lg:                 1200px;
-$screen-md:                 992px;
-$screen-sm:                 767px;
-$screen-xs:                 480px;
+$screen-xl:                             1500px;
+$screen-lg:                             1200px;
+$screen-md:                             992px;
+$screen-sm:                             767px;
+$screen-xs:                             480px;

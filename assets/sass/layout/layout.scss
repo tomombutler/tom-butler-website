@@ -1,33 +1,18 @@
-.layout {
-    position: relative;
-    display: block;
-    min-height: 100vh;
-    width: 100%;
-    max-width: 96rem;
-    margin: 0 auto;
-    background: $white;
+html,
+body {
+    background: $off-white;
 }
 
-.sidebar {
-    position: absolute;
-    height: 100vh;
-    width: 4rem;
+.section {
+    padding: 4.5vw;
+}
+
+.section--intro {
+    padding-top: 15rem;
+    text-align: center;
+}
+
+.section--dark {
     background: $black;
-}
-
-    .sidebar--left {
-        top: 0;
-        left: 0;
-        background: $black;
-    }
-
-    .sidebar--right {
-        top: 0;
-        right: 0;
-        background: $grey1;
-    }
-
-.main {
-    padding: 5rem 3rem 3rem;
-    margin: 0 4rem;
+    color: $white;
 }

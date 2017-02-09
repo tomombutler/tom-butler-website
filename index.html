@@ -26,69 +26,31 @@
         <meta name="theme-color" content="#ffffff">
     </head>
     <body>
-        <div class="layout">
-            <aside class="sidebar sidebar--left">
-                <div class="site-menu">
-                    <nav class="site-navigation">
-                        <ul class="site-navigation__list">
-                            <li class="site-navigation__item">
-                                <a class="site-navigation__link" href="/">Home</a>
-                            </li>
-                            <li class="site-navigation__item">
-                                <a class="site-navigation__link" href="/about">About</a>
-                            </li>
-                            <li class="site-navigation__item">
-                                <a class="site-navigation__link" href="/contact">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </aside>
-            <main class="main">
-                <section class="intro">
-                    <p class="page-heading page-heading--peace">Hello</p>
-                    <p class="text-intro">My name is Tom Butler. <br>I am a designer &amp; coder working in London.</p>
-                </section>
-                <section class="project-cards">
-                    <div class="project-card three-two">
-                        <a href="/" class="project-card__image content">
-                            <span class="project-card__overlay">
-                                <span class="project-card__title">Project Title</span>
-                            </span>
+        <header class="site-header">
+            <nav class="site-nav">
+                <ul class="site-nav__list">
+                    <li class="site-nav__item">
+                        <a href="/" class="site-nav__link">About</a>
+                    </li>
+                    <li class="site-nav__item site-nav__item--logo">
+                        <a href="/" class="site-nav__link">
+                            <img src="/assets/img/tb-logo.svg" alt="Tom Butler's logo" class="logo">
                         </a>
-                    </div>
-                    <div class="project-card three-two">
-                        <a href="/" class="project-card__image content">
-                            <span class="project-card__overlay">
-                                <span class="project-card__title">Project Title</span>
-                            </span>
-                        </a>
-                    </div>
-                    <div class="project-card three-two">
-                        <a href="/" class="project-card__image content">
-                            <span class="project-card__overlay">
-                                <span class="project-card__title">Project Title</span>
-                            </span>
-                        </a>
-                    </div>
-                    <div class="project-card three-two">
-                        <a href="/" class="project-card__image content">
-                            <span class="project-card__overlay">
-                                <span class="project-card__title">Project Title</span>
-                            </span>
-                        </a>
-                    </div>
-                </section>
-                <a href="/projects" class="btn btn--large btn--outline">
-                    <span>View all projects</span>
-                </a>
-            </main>
-            <aside class="sidebar sidebar--right">
-                <a href="/" class="site-link">
-                    <img src="/assets/img/tb-logo.svg" alt="Tom Butler - logo image">
-                </a>
-            </aside>
-        </div>
+                    </li>
+                    <li class="site-nav__item">
+                        <a href="/" class="site-nav__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="section section--intro">
+                <p class="p p--intro"><b>Tom Butler</b> is a <b>visual designer</b> and <b>developer</b> based in <b>North London</b></p>
+            </section>
+            <section class="section section--dark featured-projects">
+                <div class="featured-projects__carousel"></div>
+            </section>
+        </main>
 
         <!-- Include JS -->
         <script type="text/javascript" src="/assets/bower_components/jquery/dist/jquery.min.js"></script>
